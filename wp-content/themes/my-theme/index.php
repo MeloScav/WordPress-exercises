@@ -25,7 +25,7 @@ if (have_posts()) :
                     </div>
                 </div>
             </div>
-        <?php endwhile ?>
+        <?php endwhile; ?>
     </div>
 
 <?php else : ?>
