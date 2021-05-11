@@ -20,7 +20,7 @@ class SponsoMetaBox
         $value = get_post_meta($post->ID, self::META_KEY, true);
 ?>
         <input type="hidden" value="0" name="<?php self::META_KEY ?>">
-        <input type="checkbox" value="1" name="<?php self::META_KEY ?>" <?= $value === '1' ? 'checked' : '' ?>>
+        <input type="checkbox" value="1" name="<?php self::META_KEY ?>" <?php checked($value, '1') ?>>
         <label for="mythemesponso">Cet article est sponsorisé ?</label>
 <?php
     }
