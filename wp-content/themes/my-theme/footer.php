@@ -7,6 +7,10 @@
         'menu_class' => 'navbar-nav mr-auto'
     ])
     ?>
+
+    <div>
+        <?= get_option('agency_schedule'); ?>
+    </div>
 </footer>
 
 <?php wp_footer(); ?>
