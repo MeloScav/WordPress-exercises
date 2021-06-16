@@ -199,9 +199,12 @@ function mytheme_query_vars($params)
 add_action('pre_get_posts', 'mytheme_pre_get_posts');
 add_filter('query_vars', 'mytheme_query_vars');
 
-// SIDEBAR
+// SIDEBAR - WIDGET
+require_once('widgets/YoutubeWidget.php');
+
 function mytheme_register_widget()
 {
+    register_widget(YoutubeWidget::class);
     register_sidebar([
         'id' => 'homepage',
         'name' => 'Sidebar Accueil',
